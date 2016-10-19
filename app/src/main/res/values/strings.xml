@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculate Bra Size</string>
+    <string name="bandSize"><b>Band Size</b>\n\n
+        <b>1.</b> Bring the measuring tape around your back to the front, keeping it under the arms and bringing it up across to the middle of your chest (see image). If you get an odd number, round up to the next even number to get your band size.\n\n
+   <b>2.</b>  Measure across the bottom of your band, directly under the bust and across your ribcage. Make sure to keep your measuring tape straight around the back to front. Again, if you get an odd number, round up to the next even number to get your band size.
+    </string>
+
+    <string name="bustSize"><b>Bust Size</b>\n\n
+    <b>1.</b> Measure loosely around the fullest part of your bust, with the tape straight across and around your back, bringing it to the front. This is your bust size.
+    </string>
+</resources>

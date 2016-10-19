@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.bangash.brasizecalculator2.HelpActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="#000"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="How To Calculate Bra Size"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:layout_gravity="center_horizontal">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="289dp"
+            >
+            <TextView
+                android:text="@string/bandSize"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="#000"
+                android:fontFamily="serif"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_weight="1"
+            android:src="@drawable/band_size"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:text="@string/bustSize"
+                android:fontFamily="serif"
+                android:layout_marginLeft="8dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/bust_size" />
+    </LinearLayout>
+</LinearLayout>
