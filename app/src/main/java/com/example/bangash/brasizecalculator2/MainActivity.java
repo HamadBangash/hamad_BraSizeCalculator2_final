@@ -354,7 +354,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         int id = item.getItemId();
         if (id == R.id.help) {
             Intent helpIntent = new Intent(this, HelpActivity.class);
@@ -369,7 +368,7 @@ public class MainActivity extends AppCompatActivity {
             customDialog.setTitle("About Us");
             ImageView ivImage = (ImageView) view.findViewById(R.id.ivImage);
             ivImage.setImageResource(R.drawable.logo);
-            TextView tvMsg = (TextView)view.findViewById(R.id.tvMsg);
+            TextView tvMsg = (TextView) view.findViewById(R.id.tvMsg);
             tvMsg.setText("We Are Digital Applications");
             customDialog.show();
             customDialog.setCanceledOnTouchOutside(true);
