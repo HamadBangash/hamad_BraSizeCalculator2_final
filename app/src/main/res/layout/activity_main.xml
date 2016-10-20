@@ -4,13 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#fff"
+    android:background="@drawable/back"
     tools:context="com.example.bangash.brasizecalculator.MainActivity">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="#fff"
+        android:alpha=".7"
         android:layout_weight="0.73">
 
         <TextView
@@ -19,7 +21,7 @@
             android:textColor="#000"
             android:fontFamily="serif"
             android:layout_marginLeft="10dp"
-            android:text="Select Size Standard"
+            android:text="Select Your Region"
             android:id="@+id/textView"
             android:textSize="19dp"
             android:layout_weight="0.87"
@@ -38,8 +40,10 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="#fff"
+        android:alpha=".7"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="1">
+        android:layout_weight="0.62">
 
         <EditText
             android:layout_width="match_parent"
@@ -47,38 +51,45 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/etBust"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/edit_text_style"
             android:hint="Bust Size (inches)"
             android:fontFamily="serif"
+            android:textColorHint="@android:color/secondary_text_light"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1" />
+            android:layout_weight="0.73" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:hint="Band Size (inches)"
+            android:textColorHint="@android:color/secondary_text_light"
             android:fontFamily="serif"
+            android:background="@drawable/edit_text_style"
             android:inputType="number"
-            android:ems="10"
             android:id="@+id/etBand"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1" />
+            android:layout_weight="0.76" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="#fff"
+        android:alpha=".7"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.62"
         android:gravity="center">
 
         <Button
-            android:layout_width="160dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text="Calculate"
             android:fontFamily="serif"
-            android:textColor="#fff"
-            android:background="@color/colorPrimary"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:background="@drawable/btn_style"
             android:id="@+id/btnCalculate"
             android:layout_gravity="center" />
     </LinearLayout>
@@ -88,15 +99,19 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
+        android:background="#fff"
+        android:alpha=".7"
         android:layout_weight="0.70"
-        android:gravity="center">
+        android:gravity="center_horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="serif"
+            android:textColor="#000"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Result"
-            android:id="@+id/tvResult" />
+            android:id="@+id/tvResult"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 </LinearLayout>

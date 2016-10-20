@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.bangash.brasizecalculator2.SplashScreenActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lets Find It"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="29sp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:textStyle="italic|bold"
+        android:layout_weight="0.22"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/imageView3"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:src="@drawable/splash_screen" />
+</LinearLayout>

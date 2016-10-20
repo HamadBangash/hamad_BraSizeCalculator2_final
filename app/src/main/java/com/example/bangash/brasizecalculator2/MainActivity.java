@@ -7,7 +7,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -16,6 +19,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -48,6 +52,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 settingStandards();
+
+            }
+        });
+
+        //placing cursor in next edit text after typing two numbers
+        etBust.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (etBust.getText().toString().length() >= 2) {
+                    etBand.requestFocus();
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
 
             }
         });
@@ -335,6 +359,20 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.help) {
             Intent helpIntent = new Intent(this, HelpActivity.class);
             startActivity(helpIntent);
+        } else if (id == R.id.our_apps) {
+
+        } else if (id == R.id.about_us) {
+            LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+            View view = inflater.inflate(R.layout.custom_dialog, null);
+            final AlertDialog customDialog = new AlertDialog.Builder(this).create();
+            customDialog.setView(view);
+            customDialog.setTitle("About Us");
+            ImageView ivImage = (ImageView) view.findViewById(R.id.ivImage);
+            ivImage.setImageResource(R.drawable.logo);
+            TextView tvMsg = (TextView)view.findViewById(R.id.tvMsg);
+            tvMsg.setText("We Are Digital Applications");
+            customDialog.show();
+            customDialog.setCanceledOnTouchOutside(true);
         }
         return super.onOptionsItemSelected(item);
     }
