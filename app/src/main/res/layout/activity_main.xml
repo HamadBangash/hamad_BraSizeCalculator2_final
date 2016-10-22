@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#fff"
-        android:alpha=".97"
+        android:alpha=".95"
         android:layout_weight="0.73">
 
         <TextView
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#fff"
-        android:alpha=".97"
+        android:alpha=".95"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.62">
 
@@ -77,7 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#fff"
-        android:alpha=".97"
+        android:alpha=".95"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.62"
         android:gravity="center">
@@ -100,7 +100,7 @@
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:background="#fff"
-        android:alpha=".97"
+        android:alpha=".95"
         android:layout_weight="0.70"
         android:gravity="center_horizontal">
 

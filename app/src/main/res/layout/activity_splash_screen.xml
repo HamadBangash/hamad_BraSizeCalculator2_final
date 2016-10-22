@@ -18,14 +18,26 @@
         android:layout_gravity="center_horizontal"
         android:fontFamily="serif"
         android:textStyle="italic|bold"
-        android:layout_weight="0.22"
-        android:gravity="center_vertical|center_horizontal" />
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="0.16" />
 
-    <ImageView
+    <RelativeLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
+        android:background="@drawable/splash_screen"
         android:layout_height="0dp"
-        android:id="@+id/imageView3"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="1"
-        android:src="@drawable/splash_screen" />
+        android:layout_weight="1">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/progress_dialog_style"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
 </LinearLayout>

@@ -2,9 +2,13 @@ package com.example.bangash.brasizecalculator2;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ProgressBar;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -12,18 +16,16 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        final ProgressDialog progressDialog=new ProgressDialog(this);
-        progressDialog.setMessage("Please Wait...");
-        progressDialog.show();
+        final ProgressBar bar = (ProgressBar) findViewById(R.id.progressBar);
+        bar.setVisibility(View.VISIBLE);
         Thread background = new Thread() {
             public void run() {
 
                 try {
-                    sleep(2000);
+                    sleep(1500);
                     Intent i = new Intent(getBaseContext(), MainActivity.class);
                     startActivity(i);
                     overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-                    progressDialog.cancel();
                     finish();
 
                 } catch (Exception e) {
