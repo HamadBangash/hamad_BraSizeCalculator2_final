@@ -1,4 +1,4 @@
-package com.example.bangash.brasizecalculator2;
+package com.dgaps.android.brasizecalculator2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

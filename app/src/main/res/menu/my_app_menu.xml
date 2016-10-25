@@ -4,7 +4,7 @@
     <item
         android:id="@+id/help"
         android:title="HELP"
-        app:showAsAction="never"></item>
+        app:showAsAction="always"></item>
     <item
         android:id="@+id/our_apps"
         android:title="OUR APPS"

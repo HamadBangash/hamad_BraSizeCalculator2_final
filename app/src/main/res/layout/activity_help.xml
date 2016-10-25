@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#fff"
     android:orientation="vertical"
-    tools:context="com.example.bangash.brasizecalculator2.HelpActivity">
+    tools:context="com.dgaps.android.brasizecalculator2.HelpActivity">
 
     <LinearLayout
         android:orientation="vertical"
